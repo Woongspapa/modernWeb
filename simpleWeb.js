@@ -38,7 +38,7 @@ app.post("/save", (req, res) => {
 });
 
 app.post("/calc", (req, res) => {
-  var data = req.body;
+  var data = req.body;     
   var result = eval(data);
   res.send(String(result));
 });
